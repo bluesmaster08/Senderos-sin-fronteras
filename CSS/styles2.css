@@ -1,0 +1,90 @@
+/* Estilos generales */
+body {
+    font-family: 'Arial', sans-serif;
+    margin: 0;
+    padding: 20px;
+    background-color: #f5f5f5;
+}
+
+/* Panel de login */
+.bg-white {
+    border-radius: 15px; /* Ajusta según el nivel de redondeo deseado */
+    overflow: hidden; /* Opcional: asegura que el contenido respete las esquinas redondeadas */
+    padding: 20px;
+}
+
+/* Encabezado */
+h1, h2 {
+    font-weight: bold;
+}
+
+/* Columna decorativa */
+.bg-dark {
+    background-color: #4a1c1c !important;
+    color: #ffffff !important;
+    border-radius: 15px; /* Ajusta el valor según la redondez deseada */
+    overflow: hidden; /* Asegura que la imagen respete los bordes redondeados */
+    padding: 20px;
+}
+
+.bg-dark .text-center {
+    color: #ffffff;
+}
+
+.bg-opacity-50 {
+    background-color: rgba(0, 0, 0, 0.5);
+    border-radius: 10px;
+}
+
+/* Botones */
+.btn-primary {
+    background-color: #c59510;
+    border: none;
+    font-size: 1rem;
+    padding: 0.75rem;
+    border-radius: 5px;
+}
+
+.btn-primary:hover {
+    background-color: #8f6c0f;
+}
+
+/* Inputs */
+.form-control {
+    border-radius: 5px;
+    padding: 1rem;
+    font-size: 0.9rem;
+}
+
+/* Checkbox */
+.form-check-label {
+    font-size: 0.9rem;
+}
+
+/* Alertas */
+.alert-danger {
+    font-size: 0.9rem;
+    border-radius: 5px;
+}
+
+/* Texto del formulario */
+.text-muted a {
+    text-decoration: none;
+    color: #0d6efd;
+    font-weight: bold;
+}
+
+.text-muted a:hover {
+    color: #084298;
+}
+
+/* Footer */
+footer {
+    background-color: #f8f9fa;
+    font-size: 0.9rem;
+    color: #6c757d;
+}
+
+footer p {
+    margin: 0;
+}

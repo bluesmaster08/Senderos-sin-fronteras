@@ -1,0 +1,456 @@
+/* Reset de estilos y configuración básica */
+* {
+  box-sizing: border-box;
+  margin: 0;
+  padding: 0;
+}
+
+body {
+  font-family: Arial, sans-serif;
+  background-color: #ffffff;
+  /* Blanco */
+  color: #333333;
+  /* Color de texto principal */
+  line-height: 1.6;
+  background-repeat: no-repeat;
+  background-size: cover;
+}
+/*Estilos para el carrusel*/
+.carousel-container {
+  width: 80%;
+  height: 250px;
+  overflow: hidden;
+  position: relative;
+  margin: auto; /* Centrar el carrusel */
+}
+.carousel-slide {
+  display: flex;
+  transition: transform 0.5s ease-in-out;
+}
+.carousel-item {
+  position: relative;
+  flex: 0 0 40%; /* Aseguramos que cada item ocupe el 40% del ancho del contenedor */
+}
+.carousel-item img {
+  width: 100%;
+  height: 100%;
+  object-fit: cover; /* Aseguramos que las imágenes se ajusten al contenedor sin distorsión */
+  transition: transform 0.5s ease;
+}
+.carousel-slide img {
+  width: 50%;
+  height: auto;
+}
+#prevBtn,
+#nextBtn {
+  position: absolute;
+  top: 50%;
+  transform: translateY(-50%);
+  background-color: rgba(0, 0, 0, 0.5);
+  border: none;
+  color: white;
+  font-size: 2rem;
+  cursor: pointer;
+  z-index: 1;
+}
+#prevBtn {
+  left: 50px;
+}
+#nextBtn {
+  right: 50px;
+}
+
+/* Estilos para las descripciones */
+.description {
+  display: none;
+  color: white;
+  text-align: center;
+  background-color: rgba(0, 0, 0, 0.5);
+  position: absolute;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Ajustes para las imágenes al hacer hover */
+.carousel-item {
+  position: relative;
+}
+
+.carousel-item img {
+  transition: transform 0.5s ease;
+}
+
+.carousel-item img:hover {
+  transform: scale(3);
+}
+
+/*Encabezados*/
+h1 {
+  font-weight: bold;
+  color: aliceblue;
+}
+
+table {
+  width: 100%;
+  border-collapse: collapse;
+}
+
+table th,
+table td {
+  text-align: center;
+  background-color: #ffffff;
+  border: 1px solid #ccc;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+table th {
+  background-color: #950fee;
+  color: white;
+}
+
+/* Encabezado */
+header {
+  background-color: #4285f4;
+  /* Azul */
+  color: #ffffff;
+  /* Texto blanco */
+  padding: 20px;
+  text-align: center;
+}
+
+/* Contenido principal */
+main {
+  padding: 20px;
+}
+
+/* Pie de página */
+footer {
+  background-color: #34a853;
+  /* Verde */
+  color: #ffffff;
+  /* Texto blanco */
+  text-align: center;
+  padding: 5px;
+  position: fixed;
+  bottom: 0;
+  width: 100%;
+}
+
+/* Estilo del formulario de inicio de sesión */
+#login,
+.formulario,
+.reservation-form,
+#form-destino {
+  max-width: 600px;
+  margin: 20px auto;
+  padding: 20px;
+  background-color: #f2f2f2;
+  /* Gris claro */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+#login h2,
+.reservation-form h2 {
+  margin-bottom: 20px;
+}
+
+#login label,
+.reservation-form label,
+#form-destino label {
+  display: block;
+  margin-bottom: 5px;
+}
+
+#login input[type="text"],
+#login input[type="password"],
+#login button,
+.reservation-form input[type="text"],
+.reservation-form input[type="date"],
+.reservation-form input[type="number"],
+#form-destino input[type="text"],
+#form-destino textarea,
+#form-destino input[type="file"] {
+  width: 100%;
+  padding: 10px;
+  margin-bottom: 10px;
+  border: 1px solid #cccccc;
+  border-radius: 5px;
+}
+
+#login button,
+.reservation-form input[type="submit"],
+#form-destino button[type="submit"] {
+  background-color: #4285f4;
+  /* Azul */
+  color: #ffffff;
+  /* Texto blanco */
+  cursor: pointer;
+}
+
+#login button:hover,
+.reservation-form input[type="submit"]:hover,
+#form-destino button[type="submit"]:hover {
+  background-color: #357ae8;
+  /* Azul más oscuro */
+}
+
+#login p {
+  margin-top: 10px;
+}
+
+#login a,
+.destino a {
+  color: #4285f4;
+  /* Azul */
+}
+
+#login a:hover,
+.destino a:hover {
+  text-decoration: underline;
+}
+
+/* Sección de Destinos */
+nav {
+  background-color: #041a92;
+  /* Color de fondo */
+  padding: 10px;
+  /* Espaciado interno */
+}
+
+nav a {
+  color: white;
+  /* Color del texto */
+  text-decoration: none;
+  /* Quita el subrayado */
+  font-weight: bold;
+  /* Texto en negrita */
+}
+
+#destinos {
+  margin-top: 20px;
+}
+
+.destino {
+  background-color: #fff;
+  border-radius: 8px;
+  box-shadow: 0 2px 4px rgba(0, 0, 0, 0.1);
+  margin-bottom: 20px;
+  padding: 20px;
+}
+
+.destino img {
+  border-radius: 8px;
+  max-width: 30%;
+}
+
+.destino h3 {
+  margin-top: 10px;
+}
+
+.destino p {
+  margin-bottom: 10px;
+}
+
+.destino a {
+  display: inline-block;
+  background-color: #4285f4;
+  /* Azul */
+  color: #ffffff;
+  /* Texto blanco */
+  text-decoration: none;
+  padding: 0px 10px;
+  border-radius: 4px;
+}
+
+.destino a:hover {
+  background-color: #357ae8;
+  /* Azul más oscuro */
+}
+
+/* Estilo de la navegación */
+nav ul {
+  list-style: none;
+}
+
+nav ul li {
+  display: inline;
+  margin-right: 20px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #ffffff;
+}
+
+/* Estilo de la tabla de reservas */
+section#reservas {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 8px;
+  margin-bottom: 20px;
+}
+
+/* Estilos para el formulario de reservación */
+.reservation-form input[type="submit"] {
+  transition: background-color 0.3s ease;
+}
+
+.reservation-form input[type="submit"]:hover {
+  background-color: #0056b3;
+}
+
+/* Estilos para la gestión de destinos */
+/* Estilo para el formulario */
+.form-group {
+  margin-bottom: 20px;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+}
+
+input[type="text"],
+textarea {
+  width: 70%;
+  padding: 10px;
+  border: 1px solid #ccc;
+  border-radius: 5px;
+  box-sizing: border-box;
+  margin-top: 5px;
+}
+
+textarea {
+  resize: vertical;
+}
+
+input[type="file"] {
+  margin-top: 5px;
+}
+
+.btn-primary {
+  background-color: #007bff;
+  color: #fff;
+  padding: 10px 20px;
+  border: none;
+  border-radius: 5px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+.btn-primary:hover {
+  background-color: #0056b3;
+}
+
+/* Estilo para la tabla de destinos */
+#destinos table {
+  width: 100;
+  border-collapse: collapse;
+  text-align: left;
+}
+
+#destinos td button {
+  background-color: #007bff;
+  color: #fff;
+  padding: 5px 10px;
+  border: none;
+  border-radius: 3px;
+  cursor: pointer;
+  transition: background-color 0.3s ease;
+}
+
+#destinos td button:hover {
+  background-color: #0056b3;
+}
+/*bnotn file*/
+
+.file-input {
+  overflow: hidden;
+  display: inline;
+}
+
+/* Estilos para el botón de editar */
+.btn-edit {
+  background-color: #4caf50;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-edit:hover {
+  background-color: #45a049;
+}
+
+/* Estilos para el botón de eliminar */
+.btn-delete {
+  background-color: #f44336;
+  color: white;
+  padding: 10px;
+  border-radius: 5px;
+}
+
+.btn-delete:hover {
+  background-color: #da190b;
+}
+
+/*estilos para el indice del administrador*/
+.indice-admin {
+  background-color: #f2f2f2;
+  /* Color de fondo */
+  padding: 20px;
+  /* Espacio alrededor del contenido */
+  border-radius: 10px;
+  /* Bordes redondeados */
+}
+.file-input-field {
+  position: absolute;
+  top: 0;
+  right: 0;
+  margin: 0;
+  padding: 0;
+  font-size: 20px;
+  cursor: pointer;
+  opacity: 0;
+}
+
+.file-label {
+  display: inline-block;
+  padding: 5px 20px;
+  background-color: #007bff;
+  color: #fff;
+  border-radius: 5px;
+  cursor: pointer;
+}
+
+.file-label:hover {
+  background-color: #0056b3;
+}
+
+.indice-admin a {
+  display: block;
+  /* Hacer que los enlaces ocupen todo el ancho del contenedor */
+  padding: 10px 0;
+  /* Espaciado dentro de cada enlace */
+  text-decoration: none;
+  /* Quitar subrayado predeterminado */
+  color: #333;
+  /* Color del texto */
+}
+
+.indice-admin a:hover {
+  background-color: #ddd;
+  /* Cambiar el color de fondo al pasar el cursor por encima */
+}
+
+.indice-admin h2 {
+  margin-top: 0;
+  /* Eliminar el margen superior predeterminado */
+  margin-bottom: 10px;
+  /* Espaciado inferior */
+  font-size: 18px;
+  /* Tamaño de fuente */
+  color: #555;
+  /* Color del texto */
+}
